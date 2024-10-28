@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class BankingApplication {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        BankAccount[] accounts = new BankAccount[10]; // Array to hold bank accounts
+        BankAccount[] accounts = new BankAccount[10];
         int count = 0;
 
         while (true) {
