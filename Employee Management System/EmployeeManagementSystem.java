@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class EmployeeManagementSystem {
     private static ArrayList<Employee> employees = new ArrayList<>();
-    private static int nextId = 1; // To keep track of the next available ID
+    private static int nextId = 1;
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -18,10 +18,10 @@ public class EmployeeManagementSystem {
             System.out.println("5. Exit");
             System.out.print("Enter your choice: ");
             choice = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine(); 
 
             switch (choice) {
-                case 1: // Add Employee
+                case 1: 
                     System.out.print("Enter Employee Name: ");
                     String name = scanner.nextLine();
                     System.out.print("Enter Employee Salary: ");
@@ -30,7 +30,7 @@ public class EmployeeManagementSystem {
                     System.out.println("Employee added successfully.");
                     break;
 
-                case 2: // Update Employee Salary
+                case 2: 
                     System.out.print("Enter Employee ID to update salary: ");
                     int idToUpdate = scanner.nextInt();
                     boolean foundForUpdate = false;
@@ -48,7 +48,7 @@ public class EmployeeManagementSystem {
                     }
                     break;
 
-                case 3: // Delete Employee
+                case 3:
                     System.out.print("Enter Employee ID to delete: ");
                     int idToDelete = scanner.nextInt();
                     boolean foundForDelete = false;
@@ -65,14 +65,14 @@ public class EmployeeManagementSystem {
                     }
                     break;
 
-                case 4: // Display Employees
+                case 4: 
                     System.out.println("Employee List:");
                     for (Employee emp : employees) {
                         emp.display();
                     }
                     break;
 
-                case 5: // Exit
+                case 5:
                     System.out.println("Exiting...");
                     break;
 
